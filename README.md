@@ -1,10 +1,10 @@
-# Inspection of The Airplane Crashes Dataset
+## Inspection of The Airplane Crashes Dataset
 
-## Overview
+### Overview
 In this project we are interested in analysis of airplane crashes since 1908. Each row represents a record of a plane crash.
 Through various data analysis methodology especially clustering, we try to find some meaningful insights in the data.
 
-## Installation
+### Installation
 _Note: Required Python 3+_;
 
 First of all you need to install and create python virtual environment (venv).
@@ -30,7 +30,7 @@ $ make
 $ pip install .
 ```
 
-## Data Cleaning
+### Data Cleaning
 The purpose of this part is to get know the data, preprocess and save them as a new csv file.
 Print some records to get some sense about the dataset, by:
 ```python
@@ -85,7 +85,7 @@ MonthDay  Year                            Location                Operator      
 We will put special attention on the Summary column in the next steps. 
 
 
-## Explonatory Analysis
+### Explonatory Analysis
 
 ![2 clusters](resources/imgs/crashes_per_year.png)
 
@@ -100,10 +100,10 @@ Img. 1 Highest IDF Score      |  Img. 2 Lowest IDF Score
 ![2 clusters](resources/imgs/operator.png) | ![2 clusters](resources/imgs/type.png)
 
 
-## Text Clustering of Summaries
+### Text Clustering of Summaries
 
 
-#### Text Preprocessing
+##### Text Preprocessing
 <!-- In this part we are interested in the .. -->
 
 The raw text of the column 'Summary' is not suitable for nlp analysis therefore
@@ -159,10 +159,10 @@ def _lemmatize_word(tokenized_summary):
 Now we can encapsulate all these functions into the only one
 
 
-#### Text as Features 
+##### Text as Features
 
 
-##### Tf-Idf Vectorizer
+###### Tf-Idf Vectorizer
 
 
 
@@ -170,7 +170,7 @@ Now we can encapsulate all these functions into the only one
 :-------------------------:|:-------------------------:
 ![2 clusters](resources/imgs/highest_idf.png) | ![2 clusters](resources/imgs/lowest_idf.png) -->
 
-### K-Means
+#### K-Means
 
 ```python
 df = pd.read_csv(config.DATASET_DIR + args.dataset, encoding='utf-8')
