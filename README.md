@@ -103,7 +103,7 @@ Img. 1 Highest IDF Score      |  Img. 2 Lowest IDF Score
 ### Text Clustering of Summaries
 
 
-##### Text Preprocessing
+#### Text Preprocessing
 <!-- In this part we are interested in the .. -->
 
 The raw text of the column 'Summary' is not suitable for nlp analysis therefore
@@ -159,10 +159,10 @@ def _lemmatize_word(tokenized_summary):
 Now we can encapsulate all these functions into the only one
 
 
-##### Text as Features
+#### Text as Features
 
 
-###### Tf-Idf Vectorizer
+##### Tf-Idf Vectorizer
 
 
 
