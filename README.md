@@ -223,7 +223,7 @@ able, vfr flight, flight adverse, continue vfr, adverse weather, adverse, vfr, c
 **Cluster 1** contains 673 samples  
 cabin, pilot, instrument, contribute, altitude, factor, maintain, approach, minimum, terrain
 
-**Cluster 2 **contains 2937 samples  
+**Cluster 2** contains 2937 samples  
 flight adverse, crash, plane, aircraft, land, mountain, take, route, en route, en
 
 **Cluster 3** contains 1154 samples  
